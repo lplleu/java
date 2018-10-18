@@ -1,0 +1,27 @@
+//jedenfalls
+//16 Oct 2018
+//ask user to give an integer, then add all number from 1 to n
+
+import java.util.Scanner;
+
+class Main {
+
+  public static void main(String[] args) { 
+
+    int sum, x;
+    sum = 0;
+
+    System.out.println("Enter a number:");
+
+    // Reading from System.in
+    Scanner putIn = new Scanner(System.in);
+    int n = putIn.nextInt();
+
+    for(x=1;x<=n;x++){
+      sum=sum+x;
+    }
+
+    System.out.println(sum);
+  }
+
+}
