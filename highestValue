@@ -1,0 +1,28 @@
+//jedenfalls
+//19_October_2018
+//find the largest of values in a 5-integer array
+
+class Main {
+  public static void main(String[] args) {
+  //Scanner array
+
+  int[] myIntArray = {-10,-21,-3,-41,-5}; //adjust for user input???
+  int cnt = myIntArray.length-1;
+  int ref = myIntArray[0];
+
+  for(int i=0;i<cnt;i++){
+  
+    if(myIntArray[i]>=ref){
+      ref = myIntArray[i];
+      //System.out.println(myIntArray[i]+" is bigger than or equal to "+ref);
+    }
+    else{
+      ref = myIntArray[i];
+      //System.out.println(myIntArray[i]+" is less than "+ref); 
+    }
+      //System.out.println("---------");
+  }
+
+  System.out.println("final value "+ref);
+  }
+}
