@@ -1,0 +1,37 @@
+/*
+* finalMark_calcuation_from_contass
+* 26_February_2019
+* jedenfalls
+*/
+
+import java.util.Scanner;
+
+class Main {
+  public static void main(String[] args) {
+    
+    //set the Scanner object
+    Scanner con = new Scanner(System.in);
+
+    //initialize the variables
+    double averageTestMark, averageLabMark, averageLabTestMark, examMark, finalMark;
+
+    //get variable values
+    System.out.println("enter test mark.");
+    averageTestMark = con.nextDouble();
+
+    System.out.println("enter lab mark.");
+    averageLabMark = con.nextDouble();
+
+    System.out.println("enter lab-test mark.");
+    averageLabTestMark = con.nextDouble();
+
+    System.out.println("enter exam mark.");
+    examMark = con.nextDouble();
+
+    //compute final mark
+    finalMark = 0.25*averageTestMark + 0.10*averageLabMark+0.15*averageLabTestMark + 0.50*examMark;
+
+    //display result
+    System.out.println("the final mark is: "+finalMark);
+  }
+}
