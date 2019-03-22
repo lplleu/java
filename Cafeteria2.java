@@ -1,4 +1,4 @@
-// restaurant.java
+// Cafeteria2.java
 // 22_March_2019
 // jedenfalls
 
