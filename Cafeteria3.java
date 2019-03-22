@@ -31,4 +31,4 @@ public class Cafeteria3{
       System.out.printf("P%.2f due.",amountDue);   
    
    }//ends main method
-}//ends class Cafeteria
+}//ends class Cafeteria3
