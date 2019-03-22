@@ -20,7 +20,7 @@ public class Cafeteria3{
       
       if(mealType==3)
          amountDue = 0.7*(prices[0]+prices[1]+prices[2]);
-      else if (mealType < 0 || mealType >= prices.length)
+      else if (mealType < 0 || mealType > prices.length)
          amountDue = 0;
       else
          amountDue = prices[mealType];
