@@ -88,8 +88,12 @@ public class Applications{
          System.out.println("Need to work hard");      
          System.out.println("The deadline for application is March 31st 2018");  
       }
-      else if(points>18){
+      else if(points==18){
          System.out.println("You meet the minimum!");
+         System.out.println("The deadline for application is March 31st 2018");  
+      }
+      else if(points>18){
+         System.out.println("You qualify");
          System.out.println("The deadline for application is March 31st 2018");  
       }
       else if(points<18){
