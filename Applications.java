@@ -1,6 +1,6 @@
 // Applications.java
 // 28_March_2019
-// Leepile
+// jedenfalls
 
 import java.util.Scanner;
 public class Applications{
