@@ -36,7 +36,7 @@ public class SMAS{
          message = "Excellent";
          numberPassed++;
          
-         System.out.println(averageMark);      
+         System.out.println("\n"+averageMark);      
          System.out.println(message);
          
       }//ends test for over 80
@@ -44,13 +44,13 @@ public class SMAS{
          message = "Failed";
          numberFailed++;
          
-         System.out.println(averageMark);      
+         System.out.println("\n"+averageMark);      
          System.out.println(message);
       
       }//ends test for under 50
       else{
          message = "Pass";
-         System.out.println(averageMark);      
+         System.out.println("\n"+averageMark);      
          System.out.println(message);
          
          //numberPassed++;
