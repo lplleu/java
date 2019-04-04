@@ -16,7 +16,7 @@ public class SMAS{
       char grade;
    
       //totalStudents = sc.nextInt();
-      System.out.println("How many students");
+      System.out.println("How many students?");
       
       for(totalStudents = sc.nextInt(),num=1;num<=totalStudents;num++){
       
