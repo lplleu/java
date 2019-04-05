@@ -30,27 +30,25 @@ public class SMAS{
       
       averageMark = (test1+test2)/2;     
 
+      System.out.println("\n"+averageMark);     
       
       if(averageMark>=80){
          grade = 'A';
          message = "Excellent";
-         numberPassed++;
-         
-         System.out.println("\n"+averageMark);      
+         numberPassed++;    
+    
          System.out.println(message);
          
       }//ends test for over 80
       else if(averageMark<50){
          message = "Failed";
          numberFailed++;
-         
-         System.out.println("\n"+averageMark);      
+           
          System.out.println(message);
       
       }//ends test for under 50
       else{
-         message = "Pass";
-         System.out.println("\n"+averageMark);      
+         message = "Pass";    
          System.out.println(message);
          
          //numberPassed++;
