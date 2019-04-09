@@ -96,7 +96,7 @@ public class BotsPostal{
          message = "unknown destination, tarrif not given for that size.";
    }
    
-   System.out.printf("tariff due: P%f"+charge);   
+   System.out.printf("tariff due: P%5.2f",charge);  
    System.out.println(message);//
    
    } // ends main method
