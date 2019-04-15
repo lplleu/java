@@ -40,10 +40,10 @@ public class LuxuriousCoaches{
       }
    
    // checks whether correct destination is set
-   if(tripCost>0){
-      amountDue = ticketType==2?numberOfTickets * (1.5 * tripCost):numberOfTickets * tripCost;
+   if(tripCost>0&&(ticketType==1||ticketType==2)){
+      amountDue = ticketType==2?numberOfTickets * (1.5 * tripCost):ticketType==1?numberOfTickets * tripCost:0;
       System.out.printf("Amount Due: %4.2f",amountDue);   
-      }
+      } // else loop to re-enter??
       
    } // ends method
 }// ends class
