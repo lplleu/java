@@ -37,7 +37,7 @@ public class MetsiSwimmingAcademy{
          total++;
          category = "Invalid";      
       }
-      else if(age>=4&&age<8){
+      else if(age<8){
          junior++;
          category = "Junior";
          total++;
