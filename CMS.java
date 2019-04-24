@@ -27,7 +27,7 @@ public class CMS{
          
       }      
          
-         // System.out.println(total + " courses created.\n");
+         JOptionPane.showMessageDialog(null,total +" courses created.","Window title",JOptionPane.INFORMATION_MESSAGE);
          
    } // ends method
 
