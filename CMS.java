@@ -13,7 +13,7 @@ public class CMS{
       String courseCode, courseTitle;
       int total;
          ///courseCode = JOptionPane.showInputDialog("enter course code");      
-      total = 2;//JOptionPane.showInputDialog("how many courses?");
+      total = Integer.parseInt(JOptionPane.showInputDialog("how many courses?"));
         
       for(int count=1;count<=total;count++){
 
@@ -37,6 +37,5 @@ public class CMS{
 /*
    pending
       -accept whole sentence
-      -accept total
       -tell me how many courses were created
 */
