@@ -36,6 +36,6 @@ public class CMS{
 
 /*
    pending
-      -accept whole sentence
-      -tell me how many courses were created
+      -accept whole sentence (next())
+      -https://docs.oracle.com/javase/7/docs/api/javax/swing/JOptionPane.html
 */
