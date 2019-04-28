@@ -1,4 +1,4 @@
-/* MetsingSwimmingClass.java
+/* MetsingSwimmingClub.java
    calculates category and fees based on experience and number of galas
    28_April_19
    jedenfalls  */
@@ -29,4 +29,4 @@ public class Main {
       name+": LTS: P"+500))
     );
   } // ends method main
-} // ends class MetsingSwimmingClass
+} // ends class MetsingSwimmingClub
