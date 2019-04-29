@@ -17,7 +17,7 @@ public class Main {
     age = sc.nextInt();           // reads age
     System.out.println("experience?");
     experience = sc.nextInt();    // reads experience
-    System.out.println("gala?");
+    System.out.println("galas?");
     galas = sc.nextInt();         // galas
 
     System.out.println(
