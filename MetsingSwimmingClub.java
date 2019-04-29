@@ -7,8 +7,8 @@ import java.util.Scanner;
 
 public class Main {
   public static void main(String[] args) {
-    Scanner = sc= new Scanner(System.in);
-    string name;
+    Scanner sc= new Scanner(System.in);
+    String name;
     int experience, age, galas;
 
     System.out.println("name?");
