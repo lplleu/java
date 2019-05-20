@@ -12,7 +12,7 @@ public class Bank{
       // declare variables
       Scanner sc = new Scanner(System.in);
       String studentid, password, transaction;
-      double balance = 2000;
+      double balance = 2000, amount;
       int account;
       
       // read input
@@ -27,13 +27,42 @@ public class Bank{
          System.out.println("Your PIN is correct, you can proceed");
          
          System.out.println("what transaction would you like to perform; deposit, withdrawal, or fund transfers?");
+         transaction = sc.next();
             
          System.out.println("type of account to use: 1. current or 2. savings?");
          account = sc.nextInt();
          
+         System.out.println("type amount to transact.");
+         amount = sc.nextDouble();
+                  
+         if((transaction == "withdrawal")||(transaction =="transfer")){
+            balance = balance - amount;
+         }
+         else if(transaction=="deposit"){
+            balance = balance + amount;
+         }
+         
+         System.out.printf("balance: %5.2f%n",balance);
+         
+        // if((transaction=="withdrawal")||(transaction=="transfer")||(transaction=="deposit")){
+            if(balance>0){
+               System.out.println("transaction complete");
+               
+               if((account==2)&&(transaction!="deposit")){
+                  balance = balance - amount*1.1;
+               }
+            }
+            else if(balance<0){
+               balance = balance - 5;
+               System.out.println("insufficient funds");
+            }
+        // }
+        /* else{
+            System.out.println("transaction unknown. ("+transaction+")");
+         } */
       }
       else {
-         System.out.println("wrong password, the correct password is "+studentid.substring(studentid.length()-4));
+         System.out.println("wrong password.");
       } // ends if
    } // ends method
 } // ends class
