@@ -47,7 +47,7 @@ public class Bank{
                System.out.println("transaction complete");
                
                if((account==2)&&(transaction!="deposit")){
-                  balance = balance - amount*1.1;
+                  balance = balance - amount*0.1;
                }
             }
             else if(balance<0){
