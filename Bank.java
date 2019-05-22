@@ -42,10 +42,8 @@ public class Bank{
             balance = balance + amount;
          }
          
-         System.out.printf("balance: %5.2f%n",balance);
-         
-         if((transaction.equals("withdrawal"))||((transaction.equals("transfer"))||(transaction.equals("deposit"))){
-            if(balance>0){
+         if((transaction.equals("withdrawal"))||(transaction.equals("transfer"))||(transaction.equals("deposit"))){
+            if(balance>0){ //what if the balance is 4 (which is legal) but then they have to do the 10% savings withdrawal fee?
                System.out.println("transaction complete");
                
                if((account==2)&&(transaction!="deposit")){
@@ -60,6 +58,8 @@ public class Bank{
          else{
             System.out.println("transaction unknown. ("+transaction+")");
          } 
+         
+         System.out.printf("balance: %5.2f%n",balance);         
       }
       else {
          System.out.println("wrong password.");
