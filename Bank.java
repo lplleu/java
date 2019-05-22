@@ -35,16 +35,16 @@ public class Bank{
          System.out.println("type amount to transact.");
          amount = sc.nextDouble();
                   
-         if((transaction == "withdrawal")||(transaction =="transfer")){
+         if((transaction.equals("withdrawal"))||(transaction.equals("transfer"))){
             balance = balance - amount;
          }
-         else if(transaction=="deposit"){
+         else if(transaction.equals("deposit")){
             balance = balance + amount;
          }
          
          System.out.printf("balance: %5.2f%n",balance);
          
-        // if((transaction=="withdrawal")||(transaction=="transfer")||(transaction=="deposit")){
+         if((transaction.equals("withdrawal"))||((transaction.equals("transfer"))||(transaction.equals("deposit"))){
             if(balance>0){
                System.out.println("transaction complete");
                
@@ -56,10 +56,10 @@ public class Bank{
                balance = balance - 5;
                System.out.println("insufficient funds");
             }
-        // }
-        /* else{
+         }
+         else{
             System.out.println("transaction unknown. ("+transaction+")");
-         } */
+         } 
       }
       else {
          System.out.println("wrong password.");
