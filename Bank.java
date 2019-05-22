@@ -34,30 +34,44 @@ public class Bank{
          
          System.out.println("type amount to transact.");
          amount = sc.nextDouble();
-                  
-         if((transaction.equals("withdrawal"))||(transaction.equals("transfer"))){
-            balance = balance - amount;
-         }
-         else if(transaction.equals("deposit")){
-            balance = balance + amount;
-         }
+
+         if((account==1)||(account==2)){
+                           
+            if((transaction.equals("withdrawal"))||(transaction.equals("transfer"))){
+               balance = balance - amount;
+            }
+            else if(transaction.equals("deposit")){
+               balance = balance + amount;
+            }
          
-         if((transaction.equals("withdrawal"))||(transaction.equals("transfer"))||(transaction.equals("deposit"))){
-            if(balance>0){ //what if the balance is 4 (which is legal) but then they have to do the 10% savings withdrawal fee?
-               System.out.println("transaction complete");
-               
-               if((account==2)&&(transaction!="deposit")){
-                  balance = balance - amount*0.1;
+            if((transaction.equals("withdrawal"))||(transaction.equals("transfer"))||(transaction.equals("deposit"))){
+               if(balance>=0){ //what if the balance is 4 (which is legal) but then they have to do the 10% savings withdrawal fee?
+                  
+                  if((account==2)&&(transaction!="deposit")){
+                     balance = balance - amount*0.1; //penalises for transfering/withdrawing from savings
+                  }
+                  
+                  if(balance>0){
+                     System.out.println("transaction complete");
+                  }
+                  else{
+                     System.out.println("insufficient funds (not enough to include fee)");
+                     balance = balance + amount*0.1;
+                  }
+               }
+               else if(balance<0){
+                  balance = balance - 5;
+                  System.out.println("insufficient funds");
+                  balance = balance + amount;
                }
             }
-            else if(balance<0){
-               balance = balance - 5;
-               System.out.println("insufficient funds");
-            }
+            else{
+               System.out.println("transaction unknown. ("+transaction+")");
+            } 
          }
          else{
-            System.out.println("transaction unknown. ("+transaction+")");
-         } 
+            System.out.println("invalid account type. ("+account+")");
+         }
          
          System.out.printf("balance: %5.2f%n",balance);         
       }
