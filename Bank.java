@@ -37,12 +37,7 @@ public class Bank{
 
          if((account==1)||(account==2)){
                            
-            if((transaction.equals("withdrawal"))||(transaction.equals("transfer"))){
-               balance = balance - amount;
-            }
-            else if(transaction.equals("deposit")){
-               balance = balance + amount;
-            }
+            balance = ((transaction.equals("withdrawal"))||(transaction.equals("transfer")))?balance - amount:balance + amount;
          
             if((transaction.equals("withdrawal"))||(transaction.equals("transfer"))||(transaction.equals("deposit"))){
                if(balance>=0){ //what if the balance is 4 (which is legal) but then they have to do the 10% savings withdrawal fee?
