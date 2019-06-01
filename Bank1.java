@@ -27,7 +27,7 @@ public class Bank{
          System.out.println("Your PIN is correct, you can proceed");
          
          System.out.println("what transaction would you like to perform; deposit, withdrawal, or fund transfers?");
-         transaction = sc.next();
+         transaction = sc.next(); //is there no shorthand to combine this and the previous line?
             
          System.out.println("type of account to use: 1. current or 2. savings?");
          account = sc.nextInt();
