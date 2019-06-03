@@ -60,12 +60,12 @@ public class Bank2{
             }
             else{
                JOptionPane.showMessageDialog(null, "transaction unknown. ("+transaction+")", "title", JOptionPane.INFORMATION_MESSAGE);
-               System.out.println();
+               
             } 
          }
          else{
             JOptionPane.showMessageDialog(null, "invalid account type. ("+account+")", "feedback", JOptionPane.INFORMATION_MESSAGE);
-            System.out.println();
+            
          }
          
          //System.out.printf("balance: %5.2f%n",balance); 
