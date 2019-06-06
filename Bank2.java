@@ -17,7 +17,6 @@ public class Bank2{
       
       // read input
       studentid = JOptionPane.showInputDialog("enter student id");
-      
       password =  JOptionPane.showInputDialog("enter password");
       
       // processing
@@ -30,7 +29,6 @@ public class Bank2{
          transaction = JOptionPane.showInputDialog("what transaction would you like to perform; deposit, withdrawal, or fund transfers?");
             
          account =   Integer.parseInt(JOptionPane.showInputDialog("type of account to use: 1. current or 2. savings?"));
-         
          amount = Double.parseDouble(JOptionPane.showInputDialog("type amount to transact."));
 
          if((account==1)||(account==2)){
@@ -60,12 +58,10 @@ public class Bank2{
             }
             else{
                JOptionPane.showMessageDialog(null, "transaction unknown. ("+transaction+")", "title", JOptionPane.INFORMATION_MESSAGE);
-               
-            } 
+                } 
          }
          else{
-            JOptionPane.showMessageDialog(null, "invalid account type. ("+account+")", "feedback", JOptionPane.INFORMATION_MESSAGE);
-            
+            JOptionPane.showMessageDialog(null, "invalid account type. ("+account+")", "feedback", JOptionPane.INFORMATION_MESSAGE);            
          }
          
          //System.out.printf("balance: %5.2f%n",balance); 
