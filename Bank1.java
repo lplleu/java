@@ -46,6 +46,9 @@ public class Bank{
                      balance = balance - amount*0.1; //penalises for transfering/withdrawing from savings
                   }
                   
+                  // or just the below??
+                  //balance = ((account==2)&&(transaction!="deposit"))?balance - amount*0.1:balance; //penalises for transfering/withdrawing from savings
+                  
                   if(balance>0){
                      System.out.println("transaction complete");
                   }
