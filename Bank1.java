@@ -56,6 +56,9 @@ public class Bank{
                      System.out.println("insufficient funds (not enough to include fee)");
                      balance = balance + amount*0.1;
                   }
+                  
+                  //if it was without balance
+                  //System.out.println(balance>0?"transaction complete":"insufficient funds (not enough to include fee)");
                }
                else if(balance<0){
                   balance = balance - 5;
