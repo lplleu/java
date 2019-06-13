@@ -42,6 +42,8 @@ public class Bank2{
                      balance = balance - amount*0.1; //penalises for transfering/withdrawing from savings
                   }
                   
+                  //balance = ((account==2)&&(transaction!="deposit"))?balance - amount*0.1:balance;
+                  
                   if(balance>0){
                      JOptionPane.showMessageDialog(null, "transaction complete", "feedback", JOptionPane.INFORMATION_MESSAGE);
                   }
